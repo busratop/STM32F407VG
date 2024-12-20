@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"adxllibrary\startup_stm32f407xx.o"
+"adxllibrary\adxl345.o"
+"adxllibrary\main.o"
+"adxllibrary\stm32f4xx_it.o"
+"adxllibrary\stm32f4xx_hal_msp.o"
+"adxllibrary\stm32f4xx_hal_i2c.o"
+"adxllibrary\stm32f4xx_hal_i2c_ex.o"
+"adxllibrary\stm32f4xx_hal_rcc.o"
+"adxllibrary\stm32f4xx_hal_rcc_ex.o"
+"adxllibrary\stm32f4xx_hal_flash.o"
+"adxllibrary\stm32f4xx_hal_flash_ex.o"
+"adxllibrary\stm32f4xx_hal_flash_ramfunc.o"
+"adxllibrary\stm32f4xx_hal_gpio.o"
+"adxllibrary\stm32f4xx_hal_dma_ex.o"
+"adxllibrary\stm32f4xx_hal_dma.o"
+"adxllibrary\stm32f4xx_hal_pwr.o"
+"adxllibrary\stm32f4xx_hal_pwr_ex.o"
+"adxllibrary\stm32f4xx_hal_cortex.o"
+"adxllibrary\stm32f4xx_hal.o"
+"adxllibrary\stm32f4xx_hal_exti.o"
+"adxllibrary\system_stm32f4xx.o"
+--strict --scatter "adxlLibrary\adxlLibrary.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "adxlLibrary.map" -o adxlLibrary\adxlLibrary.axf
