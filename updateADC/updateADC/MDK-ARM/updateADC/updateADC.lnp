@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"updateadc\startup_stm32f407xx.o"
+"updateadc\main.o"
+"updateadc\stm32f4xx_it.o"
+"updateadc\stm32f4xx_hal_msp.o"
+"updateadc\stm32f4xx_hal_adc.o"
+"updateadc\stm32f4xx_hal_adc_ex.o"
+"updateadc\stm32f4xx_ll_adc.o"
+"updateadc\stm32f4xx_hal_rcc.o"
+"updateadc\stm32f4xx_hal_rcc_ex.o"
+"updateadc\stm32f4xx_hal_flash.o"
+"updateadc\stm32f4xx_hal_flash_ex.o"
+"updateadc\stm32f4xx_hal_flash_ramfunc.o"
+"updateadc\stm32f4xx_hal_gpio.o"
+"updateadc\stm32f4xx_hal_dma_ex.o"
+"updateadc\stm32f4xx_hal_dma.o"
+"updateadc\stm32f4xx_hal_pwr.o"
+"updateadc\stm32f4xx_hal_pwr_ex.o"
+"updateadc\stm32f4xx_hal_cortex.o"
+"updateadc\stm32f4xx_hal.o"
+"updateadc\stm32f4xx_hal_exti.o"
+"updateadc\stm32f4xx_hal_tim.o"
+"updateadc\stm32f4xx_hal_tim_ex.o"
+"updateadc\system_stm32f4xx.o"
+--strict --scatter "updateADC\updateADC.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "updateADC.map" -o updateADC\updateADC.axf

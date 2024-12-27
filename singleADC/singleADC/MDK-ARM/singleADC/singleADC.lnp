@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"singleadc\startup_stm32f407xx.o"
+"singleadc\main.o"
+"singleadc\stm32f4xx_it.o"
+"singleadc\stm32f4xx_hal_msp.o"
+"singleadc\stm32f4xx_hal_adc.o"
+"singleadc\stm32f4xx_hal_adc_ex.o"
+"singleadc\stm32f4xx_ll_adc.o"
+"singleadc\stm32f4xx_hal_rcc.o"
+"singleadc\stm32f4xx_hal_rcc_ex.o"
+"singleadc\stm32f4xx_hal_flash.o"
+"singleadc\stm32f4xx_hal_flash_ex.o"
+"singleadc\stm32f4xx_hal_flash_ramfunc.o"
+"singleadc\stm32f4xx_hal_gpio.o"
+"singleadc\stm32f4xx_hal_dma_ex.o"
+"singleadc\stm32f4xx_hal_dma.o"
+"singleadc\stm32f4xx_hal_pwr.o"
+"singleadc\stm32f4xx_hal_pwr_ex.o"
+"singleadc\stm32f4xx_hal_cortex.o"
+"singleadc\stm32f4xx_hal.o"
+"singleadc\stm32f4xx_hal_exti.o"
+"singleadc\stm32f4xx_hal_tim.o"
+"singleadc\stm32f4xx_hal_tim_ex.o"
+"singleadc\system_stm32f4xx.o"
+--strict --scatter "singleADC\singleADC.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "singleADC.map" -o singleADC\singleADC.axf

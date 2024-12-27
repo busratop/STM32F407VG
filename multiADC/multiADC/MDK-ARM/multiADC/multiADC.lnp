@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"multiadc\startup_stm32f407xx.o"
+"multiadc\main.o"
+"multiadc\stm32f4xx_it.o"
+"multiadc\stm32f4xx_hal_msp.o"
+"multiadc\stm32f4xx_hal_adc.o"
+"multiadc\stm32f4xx_hal_adc_ex.o"
+"multiadc\stm32f4xx_ll_adc.o"
+"multiadc\stm32f4xx_hal_rcc.o"
+"multiadc\stm32f4xx_hal_rcc_ex.o"
+"multiadc\stm32f4xx_hal_flash.o"
+"multiadc\stm32f4xx_hal_flash_ex.o"
+"multiadc\stm32f4xx_hal_flash_ramfunc.o"
+"multiadc\stm32f4xx_hal_gpio.o"
+"multiadc\stm32f4xx_hal_dma_ex.o"
+"multiadc\stm32f4xx_hal_dma.o"
+"multiadc\stm32f4xx_hal_pwr.o"
+"multiadc\stm32f4xx_hal_pwr_ex.o"
+"multiadc\stm32f4xx_hal_cortex.o"
+"multiadc\stm32f4xx_hal.o"
+"multiadc\stm32f4xx_hal_exti.o"
+"multiadc\stm32f4xx_hal_tim.o"
+"multiadc\stm32f4xx_hal_tim_ex.o"
+"multiadc\system_stm32f4xx.o"
+--strict --scatter "multiADC\multiADC.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "multiADC.map" -o multiADC\multiADC.axf

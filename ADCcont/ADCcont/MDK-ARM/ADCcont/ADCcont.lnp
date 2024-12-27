@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"adccont\startup_stm32f407xx.o"
+"adccont\main.o"
+"adccont\stm32f4xx_it.o"
+"adccont\stm32f4xx_hal_msp.o"
+"adccont\stm32f4xx_hal_adc.o"
+"adccont\stm32f4xx_hal_adc_ex.o"
+"adccont\stm32f4xx_ll_adc.o"
+"adccont\stm32f4xx_hal_rcc.o"
+"adccont\stm32f4xx_hal_rcc_ex.o"
+"adccont\stm32f4xx_hal_flash.o"
+"adccont\stm32f4xx_hal_flash_ex.o"
+"adccont\stm32f4xx_hal_flash_ramfunc.o"
+"adccont\stm32f4xx_hal_gpio.o"
+"adccont\stm32f4xx_hal_dma_ex.o"
+"adccont\stm32f4xx_hal_dma.o"
+"adccont\stm32f4xx_hal_pwr.o"
+"adccont\stm32f4xx_hal_pwr_ex.o"
+"adccont\stm32f4xx_hal_cortex.o"
+"adccont\stm32f4xx_hal.o"
+"adccont\stm32f4xx_hal_exti.o"
+"adccont\stm32f4xx_hal_tim.o"
+"adccont\stm32f4xx_hal_tim_ex.o"
+"adccont\system_stm32f4xx.o"
+--strict --scatter "ADCcont\ADCcont.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ADCcont.map" -o ADCcont\ADCcont.axf
